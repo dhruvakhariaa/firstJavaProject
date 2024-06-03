@@ -1,4 +1,4 @@
-public class demo
+public class PrintStatement
 {
     public static void main(String[] args)
     {
