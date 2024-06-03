@@ -1,8 +1,12 @@
+import java.util.Scanner;
+
 public class isPrime 
 {
     public static void main(String[] args) {
-        int number = 29; // Change this number to check for primality
-
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int number = sc.nextInt();
+        sc.close();
         boolean isPrime = true;
 
         if (number <= 1) {
