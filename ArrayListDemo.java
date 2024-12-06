@@ -4,7 +4,7 @@ import java.util.Collections;
 
 class ArrayListDemo {
    public static void main(String args[]) {
-       ArrayList<Integer> list = new ArrayList<Integer>();
+       ArrayList<Integer> list = new ArrayList<>();
     //    ArrayList<String> list2 = new ArrayList<String>();
     //    ArrayList<Boolean> list3 = new ArrayList<Boolean>();
       
