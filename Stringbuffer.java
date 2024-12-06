@@ -4,6 +4,7 @@
 public class Stringbuffer {
     public static void main(String[] args) 
     {
+        @SuppressWarnings("StringBufferMayBeStringBuilder")
         StringBuffer sb = new StringBuffer("Hello, ");
 
         int i = 7;
