@@ -1,7 +1,18 @@
 class Mobile{
     int price;
     String model;
-    static String name;;
+    static String name;
+
+    static{ //This is called only once when the class is loaded, no matter how many times the object is created
+        name = "Mobile";
+        System.out.println("Static block");
+    }
+
+    public Mobile(){
+        price = 5000;
+        model = "Vivo";
+        System.out.println("Constructor");
+    }
 
     void show(){
         System.out.println(name + " : " + model + " : " + price);
@@ -13,7 +24,10 @@ class Mobile{
 }
 
 public class Static {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ClassNotFoundException {
+
+        Class.forName("Mobile"); //It loads the class Mobile without making an object of it
+
         Mobile obj = new Mobile();
         obj.price = 10000;
         obj.model = "Samsung";
