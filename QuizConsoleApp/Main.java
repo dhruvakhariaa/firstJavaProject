@@ -7,5 +7,6 @@ public class Main {
 
         // service.displayQuestions();
         service.playQuiz();
+        service.CalculateScore();
     }
 }
